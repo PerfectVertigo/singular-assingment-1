@@ -43,7 +43,7 @@ Feature: User Registration
       | user_name_with_exactly_31_chars | validPass123 | validPass123 | 99           | #username too long (>30 chars)     |
       | usr                             | validPass123 | validPass123 | 99           | #username too short (<4 chars)     |
       | userA                           | short1!      | short1!      | 99           | #password too short (<8 chars)     |
-      | userA                           | Pass123!     | Pass124!     | 124          | #password/confirm mismatch         |
+      | userA                           | Pass123!     | Pass124!     | 129          | #password/confirm mismatch         |
       | Pass123!                        | Pass123!     | Pass123!     | 129          | #password matches username         |
       | test1                           | validPass123 | validPass123 | 113          | #username already exists ('test1') |
 

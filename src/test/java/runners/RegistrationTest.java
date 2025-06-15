@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps", "steps.transformers"},
-        plugin = {"html:target/cucumber-report.html"},
-        tags = "(@positive or @negative or @edge) and not @knownIssue"
+        plugin = {"pretty", "html:target/cucumber-report.html"},
+        tags = "@registration and not @knownIssue"
 )
-public class TestRunner {
+public class RegistrationTest {
 }
